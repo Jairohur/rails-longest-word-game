@@ -1,0 +1,11 @@
+<p><%= @word %></p>
+
+<% if @english_word && @in_grid%>
+<p>it's an english word! congratulations!</p>
+<% elsif @in_grid%>
+<p>it's in the grid but not an english word</p>
+<% elsif @english_word%>
+<p>it'd an english word but not in the grid</p>
+<% else %>
+<p>it's a terrible guess</p>
+<% end %>
